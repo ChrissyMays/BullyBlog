@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useState } from 'react';
 import "./write.css";
 
-export default function Write() {
-  return (
-    <div className="write">
+
+export default class Write extends React.Component {
+
+constructor(props) {
+	super(props)
+	this.state = {value: ''};
+	
+  this.handleChange = this.handleChange.bind(this);
+  this.handleSubmit = this.handleSubmit.bind(this);
+}
+
+handleChange(event) {
+  this.setState({value: event.target.value});
+}
+
+handleSubmit(event) {
+  form.sumbit()
+  event.preventDefault();
+}
+
+render() {
+	return (
+      <div className="write">
       <img
         className="writeImg"
         src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
@@ -21,6 +41,12 @@ export default function Write() {
             type="text"
             autoFocus={true}
           />
+          <input
+            className="writeInput"
+            placeholder="Author"
+            type="text"
+            autoFocus={true}
+          />
         </div>
         <div className="writeFormGroup">
           <textarea
@@ -30,10 +56,12 @@ export default function Write() {
             autoFocus={true}
           />
         </div>
-        <button className="writeSubmit" type="submit">
+        <button onSubmit={this.handleSubmit}>
           Publish
         </button>
       </form>
     </div>
   );
+ }
 }
+

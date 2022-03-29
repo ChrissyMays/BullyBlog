@@ -1,5 +1,6 @@
 .write {
     padding-top: 50px;
+  
   }
   
   .writeImg {
@@ -51,7 +52,6 @@
   
   .writeText {
     width: 70vw;
-    height: 100vh;
     font-family: inherit;
     font-size: 20px;
   }
@@ -69,4 +69,19 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+  }
+  button{
+    
+    cursor: pointer;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 2em;
+    font-weight: 300;
+    padding: 10px 60px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid transparent;
+    float: right;
+        
   }

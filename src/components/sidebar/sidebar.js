@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./sidebar.css";
+import bullySidebar from '../images/blue-puppies.jpg';
 
 export default function Sidebar() {
   return (
@@ -8,7 +9,7 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
         <img
-          src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandblog/demo/wp-content/uploads/2015/11/aboutme.jpg"
+          src={bullySidebar}
           alt=""
         />
         <p>
@@ -21,12 +22,12 @@ export default function Sidebar() {
         <ul className="sidebarList">
           <li className="sidebarListItem">
             <Link className="link" to="/posts?cat=Puppies">
-              Puppies
+              Females
             </Link>
           </li>
           <li className="sidebarListItem">
             <Link className="link" to="/posts?cat=Classics">
-              Classics
+              Males
             </Link>
           </li>
           <li className="sidebarListItem">
@@ -36,7 +37,7 @@ export default function Sidebar() {
           </li>
           <li className="sidebarListItem">
             <Link className="link" to="/posts?cat=Pocket">
-              Pocket
+              Classic
             </Link>
           </li>
           <li className="sidebarListItem">
@@ -46,7 +47,7 @@ export default function Sidebar() {
           </li>
           <li className="sidebarListItem">
             <Link className="link" to="/posts?cat=XenaDior">
-              Xena Dior
+              Pocket
             </Link>
           </li>
         </ul>

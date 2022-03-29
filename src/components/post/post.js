@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./post.css";
+import firstBullyPost from '../images/smiling-bully.jpg';
 
 export default function Post({img}) {
   return (
     <div className="post">
       <img
         className="postImg"
-        src={img}
+        src={firstBullyPost}
         alt=""
       />
       <div className="postInfo">
