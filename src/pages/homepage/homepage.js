@@ -4,28 +4,30 @@ import Header from "../../components/header/Header";
 import Posts from "../../components/posts/Posts";
 import Sidebar from "../../components/sidebar/Sidebar";
 import "./homepage.css";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from "axios";
+
 
 export default function Homepage() {
   const [blog, setBlog] = useState("")
-  const postBlog = () =>{
-    axios.get("http://127.0.0.1:8080/ ")
+  
+  useEffect(() => { 
+    axios.get("http://127.0.0.1:8080/blog/all")
     .then(response => {
-      console.log(response)
-      setBlog(response)
+      console.log("blog_data", JSON.stringify(response.data))
+      setBlog(response.data)
     }).catch(error => {
       console.log(error)
     })
-  }
+  }, []);
+  
   const location = useLocation();
   console.log(location);
   return (
     <div> 
       <Header />
       <div className="home">
-        <Posts />
-        { blog ? <p>{blog}</p> : null }
+        { blog ?  <Posts blogPosts={blog}/> : null }
         <Sidebar />
       </div>
     </div>
