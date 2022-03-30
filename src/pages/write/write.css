@@ -1,11 +1,13 @@
 .write {
     padding-top: 50px;
+    margin: 0 auto;
+    min-width: 300px;
   
   }
   
   .writeImg {
     margin-left: 150px;
-    width: 70vw;
+    min-width: 70vw;
     height: 250px;
     border-radius: 10px;
     object-fit: cover;
@@ -13,6 +15,8 @@
   
   .writeForm {
     position: relative;
+    min-width: 500px;
+    gap: 2em;
   }
   
   .writeFormGroup {
@@ -38,7 +42,7 @@
     font-size: 30px;
     border: none;
     padding: 20px;
-    width: 70vw;
+    width: 30%;
   }
   
   .writeInput::placeholder {
@@ -85,3 +89,4 @@
     float: right;
         
   }
+

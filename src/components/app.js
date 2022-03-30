@@ -7,6 +7,8 @@ import Settings from "../pages/settings/settings";
 import Single from "../pages/single/single";
 import Write from "../pages/write/write";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { FaFacebookSquare, FaTwitterSquare, FaInstagramSquare, FaPinterestSquare, FaSearch } from "react-icons/fa";
+import iconStyles from "./topbar/iconstyles.css"
 
 
 function App() {
@@ -14,6 +16,16 @@ function App() {
   return (
     <Router>
       <Topbar />
+     <div className="icons">
+        <FaFacebookSquare />
+        < FaTwitterSquare /> 
+        < FaInstagramSquare />
+        < FaPinterestSquare />
+     </div> 
+      
+      <div className="search-icon">
+        <FaSearch />
+      </div>
       <Switch>
         <Route exact path="/">
           <Homepage />
