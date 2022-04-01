@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./topbar.css";
+import topImg from '../images/topImg.jpg';
 
 
 export default function Topbar() {
@@ -27,8 +28,8 @@ export default function Topbar() {
           <Link className="link" to="/settings">
             <img
               className="topImg"
-              src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-              alt=""
+              src= {topImg}
+              alt="Top Right Img"
             />
           </Link>
         ) : (
