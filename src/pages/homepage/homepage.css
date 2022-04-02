@@ -2,3 +2,12 @@
     display: flex;
     margin: 0 auto;
   }
+
+  @media (max-width: 390px) {
+    .home{
+     grid-template-columns: 1fr;
+     grid-gap: 50px;
+     flex-direction: column;
+     align-items: flex-start;
+    }
+  }

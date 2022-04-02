@@ -27,7 +27,12 @@
     max-width: 100%;
     padding: 0 1em;
   }
-  
+  @media (max-width: 390px) {
+    .headerTitleLg {
+     font-size: 50px;
+      
+    }
+  } 
   .headerImg {
     width: 100vw;
     height: 400px;
