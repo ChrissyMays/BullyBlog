@@ -12,7 +12,7 @@ export default function Homepage() {
   const [blog, setBlog] = useState("")
   
   useEffect(() => { 
-    axios.get("http://127.0.0.1:8080/blog/all")
+    axios.get("https://breeding-website.herokuapp.com/blog/add")
     .then(response => {
       console.log("blog_data", JSON.stringify(response.data))
       setBlog(response.data)
