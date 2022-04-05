@@ -33,7 +33,7 @@ render() {
       <div className="write">
       <img
         className="writeImg"
-        src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        src="https://images.squarespace-cdn.com/content/v1/5b4f8efa12b13fd52801b8b5/1a17f6f4-0833-45f5-8cce-53e35d2e75a7/xl-american-bully.jpg" 
         alt=""
       />
       <form className="writeForm" onSubmit={this.handleSubmit}>  
@@ -66,10 +66,9 @@ render() {
             autoFocus={true}
           />
         </div>
-        <input type="submit" value="Publish"/>
+        <a class= "btn btn-primary" href="#">Publish</a>
       </form>
     </div>
   );
  }
 }
-

@@ -29,7 +29,8 @@
   }
   @media (max-width: 390px) {
     .headerTitleLg {
-     font-size: 50px;
+     font-weight: 30px;
+     font-size: 75px;
       
     }
   } 
