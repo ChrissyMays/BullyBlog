@@ -66,7 +66,7 @@ render() {
             autoFocus={true}
           />
         </div>
-        <a class= "btn btn-primary" href="#">Publish</a>
+        <input type="submit" className="btn btn-primary" value="Publish"/>
       </form>
     </div>
   );
