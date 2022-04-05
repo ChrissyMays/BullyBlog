@@ -12,7 +12,7 @@ export default function Homepage() {
   const [blog, setBlog] = useState("")
   
   useEffect(() => { 
-    axios.get("https://abbp-ccm.herokuapp.com/blog/add")
+    axios.get("https://abbp-ccm.herokuapp.com/blog/all")
     .then(response => {
       console.log("blog_data", JSON.stringify(response.data))
       setBlog(response.data)
