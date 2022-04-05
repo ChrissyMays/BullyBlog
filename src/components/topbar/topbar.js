@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./topbar.css";
-import topImg from '../images/topImg.jpg';
+import topImg from '../images/top-img.jpg';
 
 
 export default function Topbar() {
