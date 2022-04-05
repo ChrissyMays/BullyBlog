@@ -1,6 +1,6 @@
 import React from "react";
 import "./settings.css";
-import Sidebar from "../../components/sidebar/Sidebar";
+import Sidebar from "../../components/sidebar/sidebar.js";
 
 export default function Settings() {
   return (
