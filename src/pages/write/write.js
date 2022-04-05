@@ -24,7 +24,7 @@ handleChange(event) {
 handleSubmit(event) {
   console.log(event, this, "handleSubmit");
   const blogPost = { title: this.state.title, author: this.state.author, text: this.state.text };
-  axios.post('https://breeding-website.herokuapp.com/blog/add', blogPost).then(response => console.log("response",response.data));
+  axios.post('https://abbp-ccm.herokuapp.com/blog/add', blogPost).then(response => console.log("response",response.data));
   event.preventDefault();
 }
 
