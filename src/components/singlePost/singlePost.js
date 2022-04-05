@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./singlePost.css";
+import "./singlepost.css";
 
 export default function SinglePost() {
   return (
