@@ -1,8 +1,8 @@
 import React from "react";
 import { useLocation } from "react-router";
-import Header from "../../components/header/Header";
-import Posts from "../../components/posts/Posts";
-import Sidebar from "../../components/sidebar/Sidebar";
+import Header from "../../components/header/header.js";
+import Posts from "../../components/posts/posts.js";
+import Sidebar from "../../components/sidebar/sidebar.js";
 import "./homepage.css";
 import { useState, useEffect } from 'react';
 import axios from "axios";
