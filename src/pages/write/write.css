@@ -1,12 +1,12 @@
 .write {
     padding-top: 50px;
     margin: 0 auto;
-    min-width: 300px;
+    width: 100;
   
   }
   
   .writeImg {
-    margin-left: 150px;
+    margin-left: 75px;
     min-width: 70vw;
     height: 250px;
     border-radius: 10px;
@@ -17,12 +17,12 @@
   
   .writeForm {
     position: relative;
-    min-width: 500px;
+    width: 100%;
     gap: 2em;
   }
   
   .writeFormGroup {
-    margin-left: 150px;
+  
     display: flex;
     align-items: center;
   }
@@ -57,7 +57,7 @@
   }
   
   .writeText {
-    width: 70vw;
+    width: 50vw;
     font-family: inherit;
     font-size: 20px;
   }
