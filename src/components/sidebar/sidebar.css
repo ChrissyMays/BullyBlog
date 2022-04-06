@@ -1,7 +1,7 @@
 .sidebar {
     flex: 3;
     height: fit-content;
-    min-width: 400px ;
+    width: 100%;
     padding-bottom: 30px;
     background-color: #fdfbfb;
     border-radius: 10px;
