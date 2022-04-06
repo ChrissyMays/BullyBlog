@@ -25,21 +25,16 @@
     top: 30%;
     font-size: 70px;
     max-width: 100%;
-    padding: 0 1em;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 340px) {
     .headerTitleLg {
      font-weight: 30px;
      font-size: 75px;
-      
     }
   } 
   .headerImg {
     width: 100%;
-    margin-top: 80px;
-    margin-left: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
     object-fit: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
